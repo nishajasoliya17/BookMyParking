@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <title>login page</title>
+	<link rel="stylesheet" type="text/css" href="registration.css">
+  </head>	
+	<body>
+  
+	 <div class="loginbox">
+       <h1>Registration</h1>
+       <form  action="send.php" method="post">
+       	Fullname
+       	<input type="text" name="fname" placeholder="Enter full name" id="name" required><br>
+        Vehicle Number
+        <input type="text" name="vno" placeholder="Enter Vehicle number" id="vno" required><br>
+       	Phone Number
+       	<input type="tel" pattern="[0-9]{10}" name="pnumber" placeholder="Enter phone number" id="number" required><br>
+       	<!--Email Id
+       	<input type="email" name="email" placeholder="Enter Email id" id="emailid" required><br>-->
+       	Date
+       	<input type="date" name="date" placeholder="Enter date of parking booking" id="date" required><br>
+       	Time
+       	<input type="time" name="time" placeholder="Enetr time of parking booking" id="time" required><br>
+       	<a href="home.html">
+	    <input type="button" name="cancel" value="Cancel"></a><br>
+	    <input type="submit" name="submit" value="Register">
+		
+   </form>
+	</div>
+
+  
+  <!--<div id="eresult" style="color: red"></div>
+  <script type="text/javascript">{
+    function validation() {
+      var name = document.getElementById("name").value;
+      var number = document.getElementById('number').value;
+      var emailid = document.getElementById('emailid').value;
+      var date = document.getElementById('date').value;
+      var time = document.getElementById('time').value;
+
+      if (name.value=='' || number.value=='' || emailid.value=='' date.value=='' || time.value=='') {
+        document.getElementById("eresult").innerHTML = "All fields required";
+        document.write("required");
+        return false;
+      } 
+      else{
+        return true;
+      }
+    }
+    }
+  </script>-->
+  	</body>
+ </html>
+ 
